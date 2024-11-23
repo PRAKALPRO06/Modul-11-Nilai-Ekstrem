@@ -3,8 +3,8 @@
 
 <br>
 
-<h2 align="center"><strong>MODUL V</strong></h2>
-<h2 align="center"><strong> REKURSIF </strong></h2>
+<h2 align="center"><strong>MODUL XI</strong></h2>
+<h2 align="center"><strong> PENCARIAN NILAI EKSTRIM PADA HIMPUNAN DATA </strong></h2>
 
 <br>
 
@@ -281,8 +281,10 @@ func main() {
 #### Alur Program
 
 * Inisialisasi Program:
-	* Program dimulai dengan menampilkan header berisi informasi tentang program.
-  * Meminta Input Jumlah Kelinci
+
+
+* Meminta Input Jumlah Kelinci
+
 * Pengguna diminta memasukkan jumlah kelinci (n).
   * Jika jumlah kelinci yang dimasukkan kurang dari atau sama dengan nol, program meminta pengguna untuk memasukkan jumlah yang valid.
 * Memasukkan Berat Kelinci
