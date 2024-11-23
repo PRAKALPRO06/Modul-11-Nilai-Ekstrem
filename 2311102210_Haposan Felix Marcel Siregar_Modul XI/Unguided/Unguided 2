@@ -1,0 +1,53 @@
+package main
+
+import (
+    "fmt"
+)
+
+const MAX int = 1000
+
+// Fungsi untuk mengisi data berat ikan
+func isi_data(berat *[MAX]float64, n *int) {
+    fmt.Print("Masukkan jumlah ikan: ")
+    fmt.Scan(n)
+    fmt.Println("Masukkan berat ikan:")
+    for i := 0; i < *n; i++ {
+        fmt.Printf("Berat ikan ke-%d: ", i+1)
+        fmt.Scan(&berat[i])
+    }
+}
+
+// Fungsi untuk mencari berat terkecil dan terbesar
+func extrem(berat *[MAX]float64, n int, min *float64, max *float64) {
+    *min = berat[0]
+    *max = berat[0]
+    for i := 1; i < n; i++ {
+        if berat[i] < *min {
+            *min = berat[i]
+        }
+        if berat[i] > *max {
+            *max = berat[i]
+        }
+    }
+}
+
+func identitas () {
+    fmt.Println ("=========================================")
+    fmt.Println("Nama : Haposan Felix Marcel Siregar")
+    fmt.Println("NIM : 2311102210")
+    fmt.Println("=========================================")
+}
+
+// Fungsi utama
+func main() {
+    identitas()
+    var berat [MAX]float64
+    var n int
+    var min, max float64
+
+    isi_data(&berat, &n)
+    extrem(&berat, n, &min, &max)
+
+    fmt.Printf("Berat terkecil: %.2f\n", min)
+    fmt.Printf("Berat terbesar: %.2f\n", max)
+}
